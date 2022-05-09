@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>core-parent-pom</artifactId>
+		<groupId>com.wowoohr</groupId>
+		<version>1.0.6</version>
+	</parent>
+    <groupId>com.wowoohr</groupId>
+    <artifactId>calculators</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>calculators</name>
+
+    <!--项目子模块-->
+    <modules>
+        <module>calculators-facade</module>
+        <module>calculators-service</module>
+    </modules>
+
+
+	<properties>
+		<com-wowoohr-common.version>3.3.4</com-wowoohr-common.version>
+		<calculators-facade.version>${project.version}</calculators-facade.version>
+		<redisson.version>3.11.3</redisson.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.wowoohr</groupId>
+				<artifactId>core-gotone-facade</artifactId>
+				<version>2021.01.22-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+
+	</dependencyManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Nexus Release Repository</name>
+			<url>http://mvn.wowoohr.net/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://mvn.wowoohr.net/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

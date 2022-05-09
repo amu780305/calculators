@@ -1,0 +1,43 @@
+server:
+  #端口号
+  port: 8080
+  mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl #关闭sql日志
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: ${env:uat}
+  application:
+    name: calculators
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos-server-addr:nacos-dev.wowoohr.net:80}
+        # 使用public环境，uat-namespace:0fa1c9e0-f8ca-461c-97c2-b30560b52581
+        namespace: ${nacos-namespace:0fa1c9e0-f8ca-461c-97c2-b30560b52581}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        file-extension: yml
+        shared-configs[0]:
+          data-id: core-common-mysql-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+          group: DEFAULT_GROUP   # 默认为DEFAULT_GROUP
+          refresh: true   # 是否动态刷新，默认为false
+
+  servlet:
+    multipart:
+      max-file-size: 50MB  #单个数据大小
+      max-request-size: 100MB #总数据大小
+
+# feign相关配置
+feign:
+  client:
+    config:
+      default:
+        # feign接口默认连接超时配置
+        connectTimeout: 10000
+        # feign接口默认读取超时配置
+        readTimeout: 60000

@@ -1,0 +1,33 @@
+2022-05-09 21:52:21 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[calculators] & group[DEFAULT_GROUP]
+2022-05-09 21:52:21 | WARN  | main | TID: N/A | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Ignore the empty nacos configuration and get it based on dataId[calculators.yml] & group[DEFAULT_GROUP]
+2022-05-09 21:52:21 | INFO  | main | TID: N/A | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Located property source: [BootstrapPropertySource {name='bootstrapProperties-calculators-uat.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-calculators.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-calculators,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-core-common-mysql-uat.yml,DEFAULT_GROUP'}]
+2022-05-09 21:52:21 | INFO  | main | TID: N/A | com.wowoohr.calculators.Application | The following profiles are active: uat
+2022-05-09 21:52:22 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-09 21:52:22 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-09 21:52:22 | INFO  | main | TID: N/A | org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2022-05-09 21:52:22 | WARN  | main | TID: N/A | org.springframework.boot.actuate.endpoint.EndpointId | Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-09 21:52:22 | INFO  | main | TID: N/A | org.springframework.cloud.context.scope.GenericScope | BeanFactory id=6e7d5d26-68e5-309a-9e97-7197f8a4e8af
+2022-05-09 21:52:23 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8080 (http)
+2022-05-09 21:52:23 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-09 21:52:23 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardService | Starting service [Tomcat]
+2022-05-09 21:52:23 | INFO  | main | TID: N/A | org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-09 21:52:23 | INFO  | main | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2022-05-09 21:52:23 | INFO  | main | TID: N/A | org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 2612 ms
+2022-05-09 21:52:24 | WARN  | main | TID: N/A | com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean | Property 'mapperLocations' was specified but matching resources are not found.
+2022-05-09 21:52:26 | INFO  | main | TID: N/A | org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver | Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-09 21:52:26 | WARN  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | No URLs will be polled as dynamic configuration sources.
+2022-05-09 21:52:26 | INFO  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-09 21:52:26 | WARN  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | No URLs will be polled as dynamic configuration sources.
+2022-05-09 21:52:26 | INFO  | main | TID: N/A | com.netflix.config.sources.URLConfigurationSource | To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-09 21:52:26 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-09 21:52:26 | INFO  | main | TID: N/A | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-05-09 21:52:26 | WARN  | main | TID: N/A | org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration | The necessary spring property 'rocketmq.name-server' is not defined, all rockertmq beans creation are skipped!
+2022-05-09 21:52:27 | INFO  | main | TID: N/A | org.apache.coyote.http11.Http11NioProtocol | Starting ProtocolHandler ["http-nio-8080"]
+2022-05-09 21:52:28 | INFO  | main | TID: N/A | org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-09 21:52:28 | INFO  | main | TID: N/A | com.alibaba.cloud.nacos.registry.NacosServiceRegistry | nacos registry, DEFAULT_GROUP calculators 192.168.3.6:8080 register finished
+2022-05-09 21:52:28 | INFO  | main | TID: N/A | com.wowoohr.calculators.Application | Started Application in 8.836 seconds (JVM running for 10.287)
+2022-05-09 21:52:28 | INFO  | RMI TCP Connection(1)-127.0.0.1 | TID: N/A | org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 21:52:28 | INFO  | RMI TCP Connection(1)-127.0.0.1 | TID: N/A | org.springframework.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+2022-05-09 21:52:28 | INFO  | RMI TCP Connection(1)-127.0.0.1 | TID: N/A | org.springframework.web.servlet.DispatcherServlet | Completed initialization in 12 ms
+2022-05-09 21:52:28 | INFO  | RMI TCP Connection(2)-127.0.0.1 | TID: N/A | com.alibaba.druid.pool.DruidDataSource | {dataSource-1} inited
+2022-05-09 21:52:29 | INFO  | RMI TCP Connection(2)-127.0.0.1 | TID: N/A | com.alibaba.druid.pool.DruidDataSource | {dataSource-2} inited
